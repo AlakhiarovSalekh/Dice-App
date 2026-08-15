@@ -32,7 +32,7 @@ updateDiceImages() is also in viewDidLoad() so the di are rolled automatically u
 
 ### Installation
 ```
-$ git clone git@github.com:jdm79/swift-dice-app.git
+$ git clone git@github.com:SALEKH7/Dice-App.git
 ```
 * Open swift-dice-app in Xcode
 * Run the app in the simulator by pressing play in the top-left corner of the screen on Xcode
