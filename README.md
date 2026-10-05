@@ -2,9 +2,9 @@
 
 A simple dice app made with Swift. Click 'roll' (or shake the phone) and the di will produce two numbers. The total of these two di will also displayed after each roll.
 
-[How it looks](https://github.com/SALEKH7/Dice-App/blob/master/Dicee/dicee-screenshot-1.PNG)
+[How it looks](https://github.com/AlakhiarovSalekh/Dice-App/blob/main/Dicee/dicee-screenshot-1.PNG)
 
-[How it looks 2](https://github.com/SALEKH7/Dice-App/blob/master/Dicee/dicee-screenshot-2.PNG)
+[How it looks 2](https://github.com/AlakhiarovSalekh/Dice-App/blob/main/Dicee/dicee-screenshot-2.PNG)
 
 ### How it works
 
@@ -32,7 +32,7 @@ updateDiceImages() is also in viewDidLoad() so the di are rolled automatically u
 
 ### Installation
 ```
-$ git clone git@github.com:SALEKH7/Dice-App.git
+$ git clone https://github.com/AlakhiarovSalekh/Dice-App.git
 ```
 * Open swift-dice-app in Xcode
 * Run the app in the simulator by pressing play in the top-left corner of the screen on Xcode
