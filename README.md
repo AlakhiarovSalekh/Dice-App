@@ -1,4 +1,4 @@
-# Dice App
+# Swift iOS Dice App — Shake-to-Roll
 
 [![Swift](https://img.shields.io/badge/Swift-iOS-F05138?logo=swift&logoColor=white)](https://www.swift.org/)
 [![UIKit](https://img.shields.io/badge/UIKit-iOS-blue)](https://developer.apple.com/documentation/uikit)
