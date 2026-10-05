@@ -48,6 +48,12 @@ Open `Dicee.xcodeproj` in Xcode and run the app in an iOS simulator or on a comp
 
 Small bug fixes, documentation improvements, accessibility changes, and UI refinements are welcome.
 
+## More Projects by Salekh
+
+- [Habit Tracker](https://github.com/AlakhiarovSalekh/Habit-Tracker) — Swift/UIKit habit-tracking app.
+- [Sticky Notes macOS](https://github.com/AlakhiarovSalekh/Sticky-Notes-macOS-) — native Swift desktop sticky notes.
+- [Notes App](https://github.com/AlakhiarovSalekh/Notes-App) — Kotlin/Compose notes application.
+
 ## Author
 
 **Salekh Alakhiarov** · [GitHub](https://github.com/AlakhiarovSalekh)
