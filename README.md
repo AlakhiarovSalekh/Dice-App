@@ -1,40 +1,53 @@
-### Dice App
+# Dice App
 
-A simple dice app made with Swift. Click 'roll' (or shake the phone) and the di will produce two numbers. The total of these two di will also displayed after each roll.
+[![Swift](https://img.shields.io/badge/Swift-iOS-F05138?logo=swift&logoColor=white)](https://www.swift.org/)
+[![UIKit](https://img.shields.io/badge/UIKit-iOS-blue)](https://developer.apple.com/documentation/uikit)
+[![Stars](https://img.shields.io/github/stars/AlakhiarovSalekh/Dice-App?style=social)](https://github.com/AlakhiarovSalekh/Dice-App/stargazers)
 
-[How it looks](https://github.com/AlakhiarovSalekh/Dice-App/blob/main/Dicee/dicee-screenshot-1.PNG)
+A simple iOS dice roller built with Swift. Roll two dice using the button or by shaking the device, then see the combined total.
 
-[How it looks 2](https://github.com/AlakhiarovSalekh/Dice-App/blob/main/Dicee/dicee-screenshot-2.PNG)
+<p align="center">
+  <img src="Dicee/dicee-screenshot-1.PNG" alt="Dice App screenshot 1" width="320" />
+  <img src="Dicee/dicee-screenshot-2.PNG" alt="Dice App screenshot 2" width="320" />
+</p>
 
-### How it works
+## Features
 
-Function rollButtonPressed() is executed when the 'roll' button is pressed, triggering the function updateDiceImages(). This function has two pseudo-random number methods which produce a number between 0 and 5, which are both used as the index of the diceArray (which contains 'dice1' ... 'dice6') to display an image of a dice. The index of the array dictates the number shown on the dice. This function also adds the total of the random numbers (and adds 2) in order to display the total of the di shown on the device, having parsed the total into a string.
+- Two six-sided dice
+- Random roll generation
+- Combined total after every roll
+- Roll button interaction
+- Shake-to-roll interaction
+- Automatic roll when the view loads
 
-updateDiceImages() is also in viewDidLoad() so the di are rolled automatically upon opening the app, as well as when you touch the 'Roll' button or shake the phone. The function is fired once the shaking motion has finished, although you could choose to have it fire as soon as the shaking begins using 'motionBegan' rather than 'motionEnded'.
+## How It Works
 
+`updateDiceImages()` generates two random indexes from 0 to 5, uses them to select dice images, and displays the combined value. The same update is triggered from the roll button and device motion handling.
 
-### Sample Code
+```swift
+func updateDiceImages() {
+    randomDiceIndex1 = Int.random(in: 0 ... 5)
+    randomDiceIndex2 = Int.random(in: 0 ... 5)
+    total = (randomDiceIndex1 + randomDiceIndex2) + 2
 
-``` swift
- func updateDiceImages() {
-        
-        randomDiceIndex1 = Int.random(in: 0 ... 5)
-        randomDiceIndex2 = Int.random(in: 0 ... 5)
-        total = (randomDiceIndex1 + randomDiceIndex2) + 2
-        
-        diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
-        diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
-        totalAmountView.text = String(total)
-    
-      }
-  }
+    diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
+    diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
+    totalAmountView.text = String(total)
+}
 ```
 
-### Installation
-```
-$ git clone https://github.com/AlakhiarovSalekh/Dice-App.git
-```
-* Open swift-dice-app in Xcode
-* Run the app in the simulator by pressing play in the top-left corner of the screen on Xcode
+## Getting Started
 
-The app can be side-loaded onto your actual iPhone if your iOS version is the same as the Xcode version. Then you simply use a USB cord and select 'Product'>'Destination' from the Xcode toolbar, choose your device and then run the app by clicking 'play' in the top-left corner of the screen. Once the app has been built and installed on your phone, it will launch the app automatically for you.
+```bash
+git clone https://github.com/AlakhiarovSalekh/Dice-App.git
+```
+
+Open `Dicee.xcodeproj` in Xcode and run the app in an iOS simulator or on a compatible device.
+
+## Contributing
+
+Small bug fixes, documentation improvements, accessibility changes, and UI refinements are welcome.
+
+## Author
+
+**Salekh Alakhiarov** · [GitHub](https://github.com/AlakhiarovSalekh)
