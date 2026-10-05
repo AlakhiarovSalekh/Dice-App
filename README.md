@@ -48,6 +48,8 @@ Open `Dicee.xcodeproj` in Xcode and run the app in an iOS simulator or on a comp
 
 Small bug fixes, documentation improvements, accessibility changes, and UI refinements are welcome.
 
+> If this project is useful to you, consider starring the repository. It helps you find it again and helps other developers discover the project.
+
 ## More Projects by Salekh
 
 - [Habit Tracker](https://github.com/AlakhiarovSalekh/Habit-Tracker) — Swift/UIKit habit-tracking app.
